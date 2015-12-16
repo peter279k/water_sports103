@@ -1,0 +1,28 @@
+.ui-table-columntoggle-btn {
+	display: none !important;
+}
+
+.mytext {
+	color: #736357;
+	font-weight: 800;
+}
+
+.mytext2 {
+	color: #006837;
+	font-weight: 800;
+}
+
+.mytext3 {
+	color: #00a99d;
+	font-weight: 800;
+}
+
+.ui-table a:link {
+	color: #c1272d /*{a-link-color}*/;
+	font-weight: bold;
+}
+
+.ui-table a:hover {
+	color: #0071bc /*{a-link-color}*/;
+	font-weight: bold;
+}

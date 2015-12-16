@@ -1,0 +1,10 @@
+#fb-root {
+    display: none;
+}
+
+.fb-comments,
+.fb-comments span, 
+.fb-comments iframe[style],
+.fb-comments iframe span[style] {
+	width: 100% !important;
+}

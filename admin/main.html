@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>國立臺東大學103學年度水上運動會「魄泳」後台管理</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/jquery-theme.css" />
+  <link rel="stylesheet" href="../css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.5.min.css" />
+  <link href="../css/alertify.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../js/alertify.js"></script>
+  <script src="../js/main.js"></script>
+</head>
+<body>
+	<div id="main-page" data-role="page" data-theme="c" class="ui-responsive-panel">
+		<div data-role="header">
+			<a href="#action-panel" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">選單</a>
+			<h1>同意志工項目</h1>
+			<a id="logon-action" href="#" data-icon="arrow-r">登出</a>
+		</div>
+		
+		<div id="main-content" role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div id="fb-root"></div>
+			<fieldset class="ui-grid-b">
+				<div class="ui-block-a"><select id="item-list"></select></div>
+				<div class="ui-block-b"><a id="team-search" href="#" data-role="button" data-theme="b">送出</a></div>
+				<div class="ui-block-c"><a id="cloth-cal" href="#" data-role="button">衣服尺寸統計</a></div>
+			</fieldset>
+			<table data-role="table" id="volunteer-list-table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a"></table>
+		</div>
+		
+		<div data-role="popup" id="action-panel" data-theme="b">
+			<ul data-role="listview" data-inset="true" style="min-width:210px;">
+				<li data-role="list-divider">選擇連結</li>
+				<li><a href="/sports/water_sports103/admin/final_check_item" data-ajax="false">最後確認志工項目</a></li>
+				<li><a href="/sports/water_sports103/admin/print_item" data-ajax="false">列印志工名單</a></li>
+				<!--<li><a href="/sports/water_sports103/admin/insert_volunteer_list" data-ajax="false">輸入志工名單</a></li>-->
+			</ul>
+		</div>	
+	</div>
+</body>

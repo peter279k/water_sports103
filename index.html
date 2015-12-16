@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>國立臺東大學103學年度水上運動會「魄泳」</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/jquery-theme.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  <link href="css/alertify.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js?h1=zh-TW"></script> 
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="js/jquery.mobile-1.4.5.min.js"></script> 
+  <script src="js/alertify.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+	<div id="main-page" data-role="page" data-theme="c" class="ui-responsive-panel">
+		<div data-role="header">
+			<a id="panel-login" href="#main-login" data-icon="user">登入</a>
+			<h1>國立臺東大學103學年度水上運動會「魄泳」</h1>
+			<a id="panel-logon" href="#" data-icon="user">登出</a>
+		</div>
+		
+		<div id="main-content" role="main" class="ui-content jqm-content jqm-fullwidth">
+			<ul id="list-panel" data-role="listview" data-inset="true">
+				<li data-role="list-divider" data-theme="a">水上運動會志工</li>
+				<li><a href="/sports/water_sports103/volunteer/volunteer" data-ajax="false">水上運動會志工報名</a></li>
+				<li><a href="#cloth-size" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">水運會志工T-shirt尺寸參考表</a></li>
+				<li><a href="/sports/water_sports103/volunteer/signup_stat" data-ajax="false">查詢報名志工結果</a></li>
+				<!--<li data-role="list-divider" data-theme="c">體育股長專區</li>
+				<li><a href="/sports/67/chief/login" data-ajax="false">比賽報名</a></li>-->
+			</ul>
+			<div data-role="popup" id="cloth-size" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-c ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="/sports/water_sports103/cloth/cloth.jpg" alt="Photo landscape">
+			</div>
+			<div style="text-align: center;">
+				<div class="fb-like-box" data-href="https://www.facebook.com/nttuswimming?ref=profile" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+			</div>
+		</div>
+			
+		<div id="main-login" data-role="panel" data-position="left" data-display="reveal" data-theme="a">
+			<form id="login-form">
+				<h2>登入</h2>
+				<p>帳號: 您的學號</p>
+				<p>密碼: 預設您的學校信箱</p>
+				<p class="mytext2">(u學號@ms入學年.nttu.edu.tw)</p>
+				<label for="user-acc">帳號:</label>
+					<input id="user-acc" data-clear-btn="true" data-mini="true" type="text">
+				<label for="user-pwd">密碼:</label>
+					<input id="user-pwd" data-clear-btn="true" data-mini="true" type="password">
+				<label for="recaptcha">請通過下面驗證：</label>
+					<div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXugATAAAAAH3GEP-Kdamhf7rcIa8eb05aXluH"></div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><a href="#" id="login-btn" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">登入</a></div>
+					<div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">取消</a></div>
+				</div>
+			</form>
+		</div>
+			
+	</div>
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=417741035049083&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+</body>

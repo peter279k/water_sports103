@@ -1,0 +1,24 @@
+/* Navmenu */
+.jqm-navmenu-panel .ui-listview > li .ui-collapsible-heading {
+	margin: 0;
+}
+.jqm-navmenu-panel .ui-collapsible.ui-li-static {
+	padding: 0;
+	border: none !important;
+}
+.jqm-navmenu-panel .ui-collapsible + li > .ui-btn,
+.jqm-navmenu-panel .ui-collapsible + .ui-collapsible > .ui-collapsible-heading > .ui-btn,
+.jqm-navmenu-panel .ui-panel-inner > .ui-listview > li.ui-first-child .ui-btn {
+	border-top: none !important;
+}
+/*.jqm-navmenu-panel .ui-listview .ui-listview .ui-btn {
+	padding-left: 1.5em;
+	color: #999;
+}*/
+/*.jqm-navmenu-panel .ui-listview .ui-listview .ui-btn.ui-btn-active {
+	color: #fff;
+}*/
+.jqm-navmenu-panel .ui-btn:after {
+	opacity: .4;
+	filter: Alpha(Opacity=40);
+}

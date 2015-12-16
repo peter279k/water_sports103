@@ -1,0 +1,29 @@
+/* 
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/ 
+*/
+
+/* 
+This element holds injected scripts inside iframes that in 
+some cases may stretch layouts. So, we're just hiding it. 
+*/
+
+#fb-root {
+    display: none;
+}
+
+/* To fill the container and nothing else */
+
+.fb-page,.fb-page span,.fb-page span iframe[style] {
+	width: 100% !important;
+}
+
+.mytext{
+	color: #d4145a;
+	font-weight: 800;
+}
+
+.mytext2{
+	color: #c1272d;
+	font-weight: 800;
+}

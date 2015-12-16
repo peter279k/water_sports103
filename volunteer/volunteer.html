@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>國立臺東大學103學年度水上運動會「魄泳」</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/jquery-theme.css" />
+  <link rel="stylesheet" href="../css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.5.min.css" />
+  <link href="../css/alertify.css" rel="stylesheet">
+  <link href="../css/volunteer.css" rel="stylesheet">
+  <script src="../js/jquery-1.11.1.min.js"></script>
+  <script src="../js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script> 
+  <script src="../js/alertify.js"></script>
+  <script src="../js/volunteer.js"></script>
+</head>
+<body>
+	<div id="main-page" data-role="page" data-theme="c" class="ui-responsive-panel">
+		<div data-role="header">
+			<a id="index-back" href="/sports/water_sports103/index" data-ajax="false" data-icon="arrow-l">回上頁</a>
+			<h1>103學年度水上運動會「魄泳」</h1>
+			<a id="panel-login" href="#main-login" data-icon="user">登入</a>
+		</div>
+		
+		<div id="main-content" role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><a id="update-people" href="#" data-role="button" data-theme="b" data-inline="true">更新報名人數</a></div>
+				<div class="ui-block-b"><a href="#cloth-set" data-role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="pop" data-inline="true">設定運動會T-shirt尺寸</a></div>
+			</div>
+			<p class="mytext">注意事項: 報名成功與否由主辦單位認定</p>
+			<table data-role="table" id="volunteer-table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a"></table>
+		</div>
+			
+		<div id="main-login" data-role="panel" data-position="right" data-display="reveal" data-theme="a">
+			<form id="login-form">
+				<h2>登入</h2>
+				<p>帳號: 您的學號</p>
+				<p>密碼: 預設您的學校信箱
+				<p class="mytext2">(u學號@ms入學年.nttu.edu.tw)</p>
+				<label for="user-acc">帳號:</label>
+					<input id="user-acc" data-clear-btn="true" data-mini="true" type="text">
+				<label for="user-pwd">密碼:</label>
+					<input id="user-pwd" data-clear-btn="true" data-mini="true" type="password">
+				<label for="recaptcha">請通過下面驗證：</label>
+					<div id="recaptcha" class="g-recaptcha" data-sitekey="6LcXugATAAAAAH3GEP-Kdamhf7rcIa8eb05aXluH"></div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><a href="#" id="login-btn" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">登入</a></div>
+					<div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">取消</a></div>
+				</div>
+			</form>
+		</div>
+			
+	</div>
+	<div id="cloth-set" data-role="page" data-dialog="true" data-theme="c">
+		<div data-role="header">
+			<h1>設定運動會T-shirt尺寸</h1>
+		</div>
+		<div id="cloth-set-content" role="main" class="ui-content jqm-content jqm-fullwidth">
+			<div class="ui-field-contain">
+				<label for="select-cloth-size">請選擇尺寸: </label>
+				<select id="select-cloth-size" data-native-menu="false">
+					<option value="3XS">3XS</option>
+					<option value="2XS">2XS</option>
+					<option value="XS">XS</option>
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+					<option value="XL">XL</option>
+					<option value="2L">2XL(2L)</option>
+					<option value="3L">3XL(3L)</option>
+				</select>
+			</div>
+			<div class="ui-field-contain">
+				<a id="cloth-set-action" href="#" data-role="button" data-theme="b">送出</a>
+			</div>	
+		</div>
+	</div>
+</body>
